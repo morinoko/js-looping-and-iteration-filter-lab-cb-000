@@ -9,9 +9,7 @@ function findMatching (drivers, name) {
 
 // Return drivers that have a name that begins with the given string
 function fuzzyMatch (drivers, string) {
-  const stringLowerCased = string.toLowerCase();
-
-  const pattern = new RegExp("^" + stringLowerCased);
+  const pattern = new RegExp("^" + string.toLowerCase());
 
   matchingDrivers = drivers.filter( function (driver) {
     return driver.toLowerCase().match(pattern);
