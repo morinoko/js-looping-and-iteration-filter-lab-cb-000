@@ -18,6 +18,7 @@ function fuzzyMatch (drivers, string) {
   return matchingDrivers;
 }
 
+// Return driver objects if the given string matches the name key
 function matchName (drivers, searchString) {
   matchingDrivers = drivers.filter( function (driver) {
     return driver.name.toLowerCase() === searchString.toLowerCase();
