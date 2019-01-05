@@ -1,7 +1,7 @@
 // Code your solution in this file
-function findMatching (collection, string) {
-  matchingItems = collection.filter( function (item) {
-    return item.toLowerCase() === string.toLowerCase();
+function findMatching (drivers, string) {
+  matchingDrivers = drivers.filter( function (driver) {
+    return driver.toLowerCase() === string.toLowerCase();
   });
 
   return matchingItems;
