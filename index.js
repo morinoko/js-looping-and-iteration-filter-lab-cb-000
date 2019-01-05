@@ -4,7 +4,7 @@ function findMatching (drivers, name) {
     return driver.toLowerCase() === name.toLowerCase();
   });
 
-  return matchingItems;
+  return matchingDrivers;
 }
 
 // Return drivers that have a name that begins with the given string
