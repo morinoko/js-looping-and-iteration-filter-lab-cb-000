@@ -18,6 +18,10 @@ function fuzzyMatch (drivers, string) {
   return matchingDrivers;
 }
 
-function matchName () {
+function matchName (drivers, searchString) {
+  matchingDrivers = drivers.filter( function (driver) {
+    return driver.name.toLowerCase() === searchString.toLowerCase();
+  });
 
+  return matchingDrivers;
 }
