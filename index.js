@@ -1,6 +1,6 @@
 // Return drivers with the given name (case-insensitive)
-function findMatching (collection, name) {
-  matchingDrivers = collection.filter( function (driver) {
+function findMatching (driverList, name) {
+  matchingDrivers = driverList.filter( function (driver) {
     return driver.toLowerCase() === name.toLowerCase();
   });
 
